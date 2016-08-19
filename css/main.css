@@ -1,0 +1,137 @@
+@charset "utf-8";
+html { color: black; background: white; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { margin: 0; padding: 0; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+body, button, input, select, textarea { font-family: \5fae\8f6f\96c5\9ed1, Arial, \5b8b\4f53, sans-serif; font-size: 14px; line-height: 1.5; }
+input, select, textarea { font-size: 100%; }
+body { -webkit-text-size-adjust: none;}
+table { border-collapse: collapse; border-spacing: 0; }
+th { text-align: inherit; }
+fieldset, img { border: 0; }
+iframe { display: block; }
+abbr, acronym { border: 0; font-variant: normal; }
+del { text-decoration: line-through; }
+address, caption, cite, code, dfn, em, th, var { font-style: normal; font-weight: 500; }
+ol, ul { list-style: none; }
+caption, th { text-align: left; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 500; }
+q:before, q:after { content: ""; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+a:hover { text-decoration: none; }
+ins, a { text-decoration: none; }
+/* 解决link点击后周围一圈虚线的问题 */
+a { text-decoration: none;color: #111;}
+a:focus { -moz-outline-style: none; outline: none; }
+
+.clearfix { *zoom: 1;}
+.clearfix:before,
+.clearfix:after { display: table; line-height: 0; content: "";}
+.clearfix:after { clear: both;}
+
+.w{width: 1190px;margin: 0 auto;}
+.fl{float: left;}
+.fr{float: right;}
+.wp100{width: 100%;}
+
+/*icon*/
+.icon{background:url(../images/icon-sprite.png);display: block;}
+
+/*top*/
+.top-box{position: relative;height: 700px;width: 100%;}
+
+/*header*/
+.header{height: 140px;position: absolute;z-index: 2;width: 100%;top: 0;left: 0;}
+.header img{margin-top: 15px;float: left;}
+.header p{display: block;background: #FFFF59;height: 50px;float: right;border-radius: 50px;margin-top: 50px;padding-left: 10px;}
+.header p a{color: #333;display: block;float: left;height: 50px;line-height: 50px;padding: 0 32px;font-size: 16px;}
+.header p a:hover,.header p a.active{color: #FE2202;}
+.header p a.phone{border-left: 1px solid #07BBBC;font-weight: bold;color: #FE2202;}
+.header p a.act{color: #FE2202;}
+
+/*轮播图*/
+.slide-box{width: 100%;min-width: 1190px;height: 700px;overflow: hidden;position: absolute;top: 0;left: 0;z-index: 1;}
+.slide-box .flex-viewport{height: 700px;}
+.slide-box .slides {width: 1920px;position: absolute;left: 50%;margin-left: -960px;}
+.slide-box .slides li{overflow: hidden;}
+.slide-box .slides img{width: 1920px;height: 700px;}
+.slide-box .flex-control-nav{bottom:25px;left:0;position:absolute;text-align:center;width:100%;z-index:2}
+.slide-box .flex-control-nav li{display:inline-block;*zoom:1;*display: inline;height:15px;margin:0 6px;width:15px}
+.slide-box .flex-control-nav li a{background:url(../images/icon-sprite.png);background-position: -40px -56px;cursor:pointer;display:inline-block;*zoom:1;*display: inline;height:18px;width:18px;line-height:400px;overflow:hidden;}
+.slide-box .flex-control-nav .flex-active{background-position: -58px -56px;}
+
+/*波浪边框*/
+.top-boder{width: 100%;min-width: 1190px;height: 10px;background:url(../images/icon-wave.png);position: absolute;bottom: 0;left: -10px;z-index: 3;padding-right: 10px;}
+
+
+/*联系我们*/
+.footer-title {font-size: 26px;}
+.footer-title i{width: 56px;height: 44px;float: left;margin-right:20px;}
+.footer-title p{float: left;}
+.footer-title h2{float: left;margin-left: 13px;color: #FE1D00;}
+.footer-title .icon{display: block;background: url(../images/icon-air.png);}
+.icon-f{display: block;background: url(../images/icon-sprite.png);width: 20px;height: 21px;float: left;margin-right: 12px;}
+.icon-f-2{background-position: -20px 0;}
+.icon-f-3{background-position: -40px 0;}
+.icon-f-4{background-position: -60px 0;}
+.footer {width: 100%;min-width: 1190px;background: #F8F8F8;border-top: 1px solid #ECECEC;height: 610px;padding: 50px 0 0 0;}
+.footer .w{height: 610px;position: relative;}
+.footer ul{margin: 40px 0 0 10px;}
+.footer ul li{margin-bottom: 20px;}
+.ie7 .footer ul li p{display: inline;zoom:1;float: left;}
+.footer .QRcode{width: 180px;margin: 60px 0 0 135px;text-align: center;color: #666;}
+.footer .QRcode img{width: 180px;height: 180px;}
+.footer .copyright{color: #666;text-align: center;width: 100%;height: 40px;line-height:40px;background:#2E3138;}
+.footer .copyright span{margin-left: 30px;}
+.footer .copyright a{color: #666;}
+#allmap{width:715px;height:560px;position: absolute;top: 0;right: 0;border: none;text-align: center;line-height: 560px;font-size: 16px;background: #f5f3f0;color: #666;}
+#allmap iframe{position: absolute;left: 0;top: 0;}
+
+/*上下跳动*/
+.footer ul li:hover i{
+-webkit-backface-visibility:visible;
+-webkit-transform-origin:center center;
+-webkit-animation:bounce 1s 0s infinite ease normal none ;
+backface-visibility:visible;
+transform-origin:center center;
+animation:bounce 1s 0s infinite ease normal none ;
+}
+@-webkit-keyframes bounce{0%{-webkit-transform:translateY(0px);} 50%{-webkit-transform:translateY(-3px);} 100%{-webkit-transform:translateY(0px);}}
+@keyframes bounce{0%{transform:translateY(0px);} 50%{transform:translateY(-3px);} 100%{transform:translateY(0px);} }
+
+
+
+/*楼层*/
+.floor{margin-top: 40px;}
+
+/*楼层标题*/
+.floor-title{width: 100%;margin-bottom: 30px;position: relative;overflow: hidden;padding-top: 23px;}
+.floor-title-con{width: 1163px;margin-left: 27px;border-bottom: 3px dashed #724D30;height: 43px;margin-bottom: -1px;}
+.ie .floor-title-con{border-width: 6px;margin-bottom: -4px;}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	/* IE10+ CSS styles go here */
+	.floor-title-con{border-width: 6px;margin-bottom: -4px;}
+}
+.floor-title .icon-bulb{width: 40px;height: 66px;background-position: 0 -21px;position: absolute;top: 2px;left: 0;}
+.floor-title-con .icon-fine{float: right;width: 40px;height: 36px;background-position: -40px -21px;position: absolute;top: 18px;right: 0;z-index: 2;}
+.floor-title-con .icon-sun{background-position: -40px -21px;background-position: -40px -74px;width: 36px;height: 36px;position: absolute;top: 17px;right: 0;z-index: 1;}
+/*旋转动画*/
+.floor-title-con .icon-sun{-webkit-animation:sun 8s 0s infinite linear normal none ;-moz-animation:sun 8s 0s infinite linear normal none ;animation:sun 8s 0s infinite linear normal none ;}
+@-webkit-keyframes sun{0%{-webkit-transform:rotate(deg)}100%{-webkit-transform:rotate(360deg)}}
+@-moz-keyframes sun{0%{-moz-transform:rotate(deg)}100%{-moz-transform:rotate(360deg)}}
+@keyframes sun{0%{transform:rotate(deg)}100%{transform:rotate(360deg)}}
+
+.floor-title-con p{display: inline-block;*zoom:1;*display: inline;font-size: 20px;margin-left: 30px;float: left;}
+.floor-title-con h2{display: inline-block;*zoom:1;*display: inline;font-size: 20px;color: #FE1F00;float: left;margin-left: 5px;}
+.floor-title-con .location-text{font-size: 12px;float: right;margin-right: 55px;line-height: 43px;color: #666;}
+.floor-title-con .location-text a{color: #666;}
+.floor-title-con .location-text span{color: #fe1e01;}
+
+/*返回顶部*/
+.rocket-to-top{background:url(../images/rocket_button_up.png) no-repeat scroll 0 0 transparent;cursor:default;display:none;height:250px;margin:-50px 0 0;overflow:hidden;padding:0;position:fixed;right:0;top:80%;width:149px;z-index:11}
+.rocket-to-top div{left:0;margin:0;overflow:hidden;padding:0;position:absolute;top:0;width:149px}
+.rocket-to-top .level-2{background:url(../images/rocket_button_up.png) no-repeat scroll -149px 0 transparent;height:250px;opacity:0;z-index:1}
+.rocket-to-top .level-3{background:none repeat scroll 0 0 transparent;cursor:pointer;display:block;height:150px;z-index:2}
+
